@@ -13,7 +13,7 @@ header {
 }
 
 .menu{
-    background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    /*background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
     position: fixed;
     width: 100vw;
     top: 0;
@@ -27,8 +27,9 @@ header {
 
 .menu a:active,
 .menu a:hover {
-  background-color: whitesmoke;
-  color: #000000;  
+    font-family: 'Hepta Slab', serif;
+    background-color: whitesmoke;
+    color: #000000;  
 }
 
 .menu ul{
@@ -42,22 +43,24 @@ header {
 }
 
 a{
+    font-family: 'Hepta Slab', serif;
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
 }
 
 body{
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-image: linear-gradient(to right, black,#070719);
+    font-family: 'Hepta Slab', serif;
     /*background-color: rgb(60, 231, 180);*/
     background-size: auto 100vh;
     height: 100vh;
 }
 
-.titulo,
-.contato{
+.titulo{
     /*text-align: center;*/
     padding: 60px 12px 0px 0px;
+    min-height: 100vh;
 }
 
 @media(min-width:1200px){
@@ -71,6 +74,7 @@ body{
 .titulo h1{
     color: whitesmoke;
     /*margin-bottom: 2em;*/
+    font-family: 'Hepta Slab', serif;
     font-size: 2em;
     line-height: 2em;
     margin: 2px 2px 2px 2px;
@@ -80,19 +84,31 @@ body{
     display: flex;
     /*justify-content: flex-end;*/
     float: right;
+    margin: 2em;
 }
 
 .perfil img{
     height: 300px;
     width: 300px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.sobre{
+.sobre p{
+    font-family: 'Hepta Slab', serif;
     color: whitesmoke;
+    text-indent: 1.5em;
+    text-align: justify;
+
+}
+
+.contato{
+    padding: 12px 12px 0px 0px;
+    min-height: 50  vh;
 }
 
 .contato h2{
+    font-family: 'Hepta Slab', serif;
     color:whitesmoke;
     font-size: 2em;
 }
